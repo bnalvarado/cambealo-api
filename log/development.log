@@ -1580,3 +1580,883 @@ Processing by API::V1::SessionsController#create as HTML
   Parameters: {"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]"}}
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "bnalvarado@gmail.com"]]
 Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-16 18:49:09 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (20.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "bnalvarado@gmail.com"]]
+Completed 200 OK in 158ms (Views: 28.5ms | ActiveRecord: 20.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-16 19:41:46 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.3) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.3) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  rack-cors (0.3.0) lib/rack/cors.rb:72:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.1ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fa924ced478 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fa924ced0e0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fa924ce5cf0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateProducts (20150817011902)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "products" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "product_name" varchar, "description" varchar, "picture" varchar, "status" varchar, "register_date" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150817011902"]]
+  [1m[36m (14.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-16 19:42:50 -0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "bnalvarado@gmail.com"]]
+Completed 200 OK in 32ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-16 19:43:03 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "bnalvarado@gmail.com"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-16 19:44:07 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "bnalvarado@gmail.com"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/products" for ::1 at 2015-08-16 23:00:59 -0600
+Processing by API::V1::ProductsController#create as HTML
+  Parameters: {"product_name"=>"Mac Mini", "description"=>"Mac $700 2014", "picture"=>"data:image/png;base64,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", "register_date"=>"2015-08-16", "product"=>{"product_name"=>"Mac Mini", "description"=>"Mac $700 2014", "picture"=>"data:image/png;base64,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", "register_date"=>"2015-08-16"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (12.0ms)[0m  [1mINSERT INTO "products" ("product_name", "description", "picture", "register_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["product_name", "Mac Mini"], ["description", "Mac $700 2014"], ["picture", "data:image/png;base64,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"], ["register_date", "2015-08-16"], ["created_at", "2015-08-17 05:00:59.853923"], ["updated_at", "2015-08-17 05:00:59.853923"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+Completed 200 OK in 37ms (Views: 0.3ms | ActiveRecord: 30.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:06:17 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.7ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:06:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:03 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:09 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:11 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:14 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:39 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:42 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:07:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT  "products".* FROM "products"  ORDER BY "products"."id" ASC LIMIT 1[0m
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:09:25 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:11:09 -0600
+
+SyntaxError (/Users/Alvarado/Documents/Shogo/uTn/7º Cuatrimestre/Programacion en ambiente web ll/Proyecto 2/cambealo-api/app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+        exceptFields = [picture:, :created_at, :updated_at]
+                                 ^):
+  app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (102.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:11:28 -0600
+
+SyntaxError (/Users/Alvarado/Documents/Shogo/uTn/7º Cuatrimestre/Programacion en ambiente web ll/Proyecto 2/cambealo-api/app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+        exceptFields = [picture:, :created_at, :updated_at]
+                                 ^):
+  app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (82.7ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:11:48 -0600
+
+SyntaxError (/Users/Alvarado/Documents/Shogo/uTn/7º Cuatrimestre/Programacion en ambiente web ll/Proyecto 2/cambealo-api/app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+        exceptFields = [picture:, :created_at, :updated_at]
+                                 ^):
+  app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (80.7ms)
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:12:13 -0600
+
+SyntaxError (/Users/Alvarado/Documents/Shogo/uTn/7º Cuatrimestre/Programacion en ambiente web ll/Proyecto 2/cambealo-api/app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+        exceptFields = [picture:, :created_at, :updated_at]
+                                 ^):
+  app/controllers/api/v1/products_controller.rb:10: syntax error, unexpected ','
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.4ms)
+Cannot render console with content type application/jsonAllowed content types: [#<Mime::Type:0x007fa924ced478 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007fa924ced0e0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007fa924ce5cf0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:12:43 -0600
+Processing by API::V1::ProductsController#index as */*
+  Parameters: {"product"=>{}}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:12:59 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:13:12 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:14:00 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:14:24 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:14:44 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:14:57 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:15:29 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:15:34 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:15:43 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:16:13 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:16:23 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:16:39 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:16:57 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:17:15 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-16 23:17:19 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)

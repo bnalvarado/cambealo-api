@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :users
   namespace :api do
     namespace :v1 do
       resources :sessions, :only => [:create]
       resources :users
+      resources :products
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.
