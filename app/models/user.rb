@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
   before_create :set_defaults
   validates_presence_of :email, :password, on: :create
   validates_uniqueness_of :email
+  has_many :products
 
   #Encrypt password before save user
   def set_encrypted_password

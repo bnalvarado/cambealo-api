@@ -6,6 +6,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :picture
       t.string :status
       t.string :register_date
+      t.integer :user_id
 
       t.timestamps null: false
     end

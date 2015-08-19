@@ -2,18 +2,22 @@ module API
   module V1
     class ProductsController < ApplicationController
       before_action :set_product, only: [:show, :update, :destroy]
-
+      before_action :set_user, only: [:create, :show, :update, :destroy]
       # GET /products
       # GET /products.json
       def index
         @products = Product.all
-        exceptFields = [:picture, :register_date, :created_at, :updated_at]
+        exceptFields = [:register_date, :created_at, :updated_at]
         return render json: { products: @products.as_json(:except => exceptFields) }, status: 200
       end
 
       # GET /products/1
       # GET /products/1.json
       def show
+        if @product.nil?
+          return render json: { error: @product.errors }, status: 422
+        end
+        return render json: { product: @product }, status: 200
       end
 
       # GET /products/new
@@ -29,37 +33,41 @@ module API
       # POST /products.json
       def create
         product = Product.new(product_params)
-        if product.save
-          return render json: { created: true }, status: 200
+        if !product.save
+          return render json:{ error: product.errors }, status: 422
         end
-        return render json:{ error: product.errors }, status: 422
+        @user.products.push(product)
+        return render json: { created: true }, status: 200
       end
 
       # PATCH/PUT /products/1
       # PATCH/PUT /products/1.json
       def update
-        respond_to do |format|
-          if @product.update(product_params)
-            format.html { redirect_to @product, notice: 'Product was successfully updated.' }
-            format.json { render :show, status: :ok, location: @product }
+        product = @user.products.find(params[:id])
+          if !product.update(product_update_params)
+            return render json: { error: @product.errors }, status: 422
           else
-            format.html { render :edit }
-            format.json { render json: @product.errors, status: :unprocessable_entity }
+            return render json: { updated: true }, status: 200
           end
-        end
       end
 
       # DELETE /products/1
       # DELETE /products/1.json
       def destroy
-        @product.destroy
-        respond_to do |format|
-          format.html { redirect_to products_url, notice: 'Product was successfully destroyed.' }
-          format.json { head :no_content }
+        product = @user.products.find(params[:id])
+        if !product.destroy
+          return render json: { error: @product.errors }, status: 422
+        else
+          return render json: { deleted: true }, status: 200
         end
       end
 
       private
+
+        def set_user
+          @user = User.find(params[:user_id])
+        end
+
         # Use callbacks to share common setup or constraints between actions.
         def set_product
           @product = Product.find(params[:id])
@@ -68,6 +76,10 @@ module API
         # Never trust parameters from the scary internet, only allow the white list through.
         def product_params
           params.require(:product).permit(:product_name, :description, :picture, :status, :register_date)
+        end
+
+        def product_update_params
+          params.require(:product).permit(:product_name, :description, :picture, :status)
         end
     end
   end

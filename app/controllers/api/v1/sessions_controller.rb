@@ -7,7 +7,7 @@ module API
 			def create
 		        user = User.authenticate(params[:email], params[:password])
 		      	if user.nil?
-		      	  return render json: { response: 'Invalid data' }, status: 401
+		      	  return render json: { response: 'Invalid data' }, status: 422
 		      	end
 		        exceptFields = [:password, :created_at, :updated_at]
 		        return render json: { user: user.as_json(:except => exceptFields) }, status: 200

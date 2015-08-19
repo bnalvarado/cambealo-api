@@ -12,6 +12,11 @@ module API
       # GET /users/1
       # GET /users/1.json
       def show
+        if @user.nil?
+          return render json: { error: @user.errors }, status: 422
+        end
+        exceptFields = [:password, :created_at, :updated_at]
+        return render json: { user: @user.as_json(:except => exceptFields) }, status: 200
       end
 
       # GET /users/new
@@ -36,6 +41,12 @@ module API
       # PATCH/PUT /users/1
       # PATCH/PUT /users/1.json
       def update
+        if !@user.update(user_update_params)
+          return render json: { error: @user.errors }, status: 422
+        else
+          exceptFields = [:password, :created_at, :updated_at]
+          return render json: { updated: true, user: @user.as_json(:except => exceptFields) }, status: 200
+        end
       end
 
       # DELETE /users/1
@@ -52,6 +63,10 @@ module API
         # Never trust parameters from the scary internet, only allow the white list through.
         def user_params
           params.require(:user).permit(:first_name, :last_name, :password, :email, :phone, :age)
+        end
+
+        def user_update_params
+          params.require(:user).permit(:first_name, :last_name, :email, :phone, :age)
         end
     end
   end
