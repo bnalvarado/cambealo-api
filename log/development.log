@@ -6895,3 +6895,3917 @@ Processing by API::V1::UsersController#show as HTML
   Parameters: {"id"=>"6"}
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:25:41 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (3.7ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 28ms (Views: 5.4ms | ActiveRecord: 4.0ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:25:45 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:25:46 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:26:02 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"bnalvarado@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "bnalvarado@gmail.com"]]
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:26:02 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:26:20 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:26:51 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:27:03 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:28:35 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:28:36 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:00 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:03 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:04 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:16 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:34 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:36 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:38 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:41 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:29:59 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:30:01 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:30:09 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:30:11 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:31:48 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:32:24 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:32:26 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:33:28 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:33:29 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:33:36 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:33:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:34:19 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:35:25 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:35:35 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:35:38 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:35:40 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:37:28 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:37:45 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:41:53 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 7ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:42:04 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:42:19 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:42:29 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:42:49 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:42:54 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:43:08 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:43:15 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:43:19 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:43:23 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:44:20 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:44:22 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:45:07 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:45:18 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:45:31 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:45:33 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:45:53 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:45:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:46:14 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:46:44 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:46:51 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:46:58 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:48:11 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:48:27 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 8ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:48:32 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:49:13 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:49:25 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:51:00 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:51:11 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:51:13 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:51:27 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/users" for ::1 at 2015-08-18 19:52:06 -0600
+Processing by API::V1::UsersController#create as HTML
+  Parameters: {"first_name"=>"luis", "last_name"=>"gonzalez", "password"=>"[FILTERED]", "email"=>"luisgzvs@gmail.com", "phone"=>88888888, "age"=>25, "user"=>{"first_name"=>"luis", "last_name"=>"gonzalez", "password"=>"[FILTERED]", "email"=>"luisgzvs@gmail.com", "phone"=>88888888, "age"=>25}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'luisgzvs@gmail.com' LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["token", "XerIBQ_kwXL1xKkFVr6DJg"]]
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("first_name", "last_name", "password", "email", "phone", "age", "created_at", "updated_at", "token") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "luis"], ["last_name", "gonzalez"], ["password", "17e7d4998f0723d6a8282bfa6caa2ea07d2cb274"], ["email", "luisgzvs@gmail.com"], ["phone", 88888888], ["age", 25], ["created_at", "2015-08-19 01:52:06.476110"], ["updated_at", "2015-08-19 01:52:06.476110"], ["token", "XerIBQ_kwXL1xKkFVr6DJg"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 2.5ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:19 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:20 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:27 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:27 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:27 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:28 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:28 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:28 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:28 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:29 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:29 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:32 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:52:32 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:52:37 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:52:39 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:54 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:55 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:55 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:56 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:56 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:56 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 6ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:52:58 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:52:58 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:53:23 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:53:25 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:53:29 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:53:53 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "luisgzvs@gmail.com"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/sessions" for ::1 at 2015-08-18 19:53:55 -0600
+Processing by API::V1::SessionsController#create as HTML
+  Parameters: {"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"luisgzvs@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "luisgzvs@gmail.com"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:53:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:54:08 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:56:48 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 19:59:36 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:00:17 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:01:25 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:03:13 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:04:09 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:04:13 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:12:56 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:15:37 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (2.6ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 16ms (Views: 4.0ms | ActiveRecord: 2.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:28:09 -0600
+Processing by API::V1::ProductsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/luisgonzalez/GitHub/cambealo-api/app/models/product.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/models/product.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/products_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (75.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:28:16 -0600
+Processing by API::V1::ProductsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/luisgonzalez/GitHub/cambealo-api/app/models/product.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/models/product.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/api/v1/products_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (124.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:28:43 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 12ms (Views: 3.3ms | ActiveRecord: 0.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:30:49 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 13ms (Views: 3.5ms | ActiveRecord: 0.8ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/mac" for ::1 at 2015-08-18 20:30:53 -0600
+Processing by API::V1::ProductsController#show as HTML
+  Parameters: {"id"=>"mac"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 6ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=mac):
+  app/controllers/api/v1/products_controller.rb:73:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (52.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (112.0ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:31:08 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/mac" for ::1 at 2015-08-18 20:31:13 -0600
+Processing by API::V1::ProductsController#show as HTML
+  Parameters: {"id"=>"mac"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=mac):
+  app/controllers/api/v1/products_controller.rb:73:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.6ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/mac" for ::1 at 2015-08-18 20:32:52 -0600
+Processing by API::V1::ProductsController#show as HTML
+  Parameters: {"id"=>"mac"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=mac):
+  app/controllers/api/v1/products_controller.rb:73:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.9ms)
+
+
+Started GET "/api/v1/products/mac" for ::1 at 2015-08-18 20:33:31 -0600
+Processing by API::V1::ProductsController#show as */*
+  Parameters: {"id"=>"mac"}
+  [1m[36mProduct Load (0.1ms)[0m  [1mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=mac):
+  app/controllers/api/v1/products_controller.rb:73:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (58.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (131.4ms)
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:35:31 -0600
+Processing by API::V1::ProductsController#search as */*
+  Parameters: {"name"=>"mac"}
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" WHERE (name like 'mac%')
+SQLite3::SQLException: no such column: name: SELECT "products".* FROM "products" WHERE (name like 'mac%')
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.9ms)
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: name: SELECT "products".* FROM "products" WHERE (name like 'mac%')):
+  app/controllers/api/v1/products_controller.rb:67:in `search'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (129.0ms)
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:36:24 -0600
+Processing by API::V1::ProductsController#search as */*
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/mac" for ::1 at 2015-08-18 20:36:28 -0600
+Processing by API::V1::ProductsController#show as HTML
+  Parameters: {"id"=>"mac"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=mac):
+  app/controllers/api/v1/products_controller.rb:73:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (124.1ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:36:35 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/mac" for ::1 at 2015-08-18 20:36:38 -0600
+Processing by API::V1::ProductsController#show as HTML
+  Parameters: {"id"=>"mac"}
+  [1m[35mProduct Load (0.1ms)[0m  SELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=mac):
+  app/controllers/api/v1/products_controller.rb:73:in `set_product'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:37:05 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:37:08 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:37:10 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:37:27 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:37:31 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:12 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac%')
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:39:15 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:21 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac%')
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:24 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:32 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac%')
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:36 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:39 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac%')
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:44 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:39:47 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac%')
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:39:52 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:39:56 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20mini" for ::1 at 2015-08-18 20:40:01 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac mini"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac mini%')[0m
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20mini" for ::1 at 2015-08-18 20:40:03 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac mini"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac mini%')
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:40:06 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20mini" for ::1 at 2015-08-18 20:40:11 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac mini"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac mini%')
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20mini" for ::1 at 2015-08-18 20:40:31 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac mini"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac mini%')[0m
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:40:35 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20mini" for ::1 at 2015-08-18 20:40:40 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac mini"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac mini%')[0m
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:41:03 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:41:07 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20book" for ::1 at 2015-08-18 20:41:15 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac book"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac book%')
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:41:19 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20bo" for ::1 at 2015-08-18 20:41:25 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac bo"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac bo%')
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:41:31 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:41:34 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20book" for ::1 at 2015-08-18 20:41:40 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac book"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac book%')[0m
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:42:42 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:42:45 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:43:36 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:43:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:43:56 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:44:03 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:44:39 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:45:14 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:45:18 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20b" for ::1 at 2015-08-18 20:45:22 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac b"}
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac b%')[0m
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20mini" for ::1 at 2015-08-18 20:45:26 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac mini"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac mini%')
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:45:30 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20b" for ::1 at 2015-08-18 20:45:33 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac b"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac b%')
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:45:49 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: POST
+  Access-Control-Request-Headers: accept, content-type, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, content-type, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started POST "/api/v1/products" for ::1 at 2015-08-18 20:46:28 -0600
+Processing by API::V1::ProductsController#create as HTML
+  Parameters: {"product_name"=>"macb", "description"=>"", "picture"=>"data:image/jpeg;base64,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", "status"=>"activo", "register_date"=>"2015-08-18", "product"=>{"product_name"=>"macb", "description"=>"", "picture"=>"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQSEBIQEhQUFBQVGBQVFBUWFxYYHRcYFxQXFxQXGhgYHishGxslHhcVLT0iJSktLi4uFx8zRDMsNygtLisBCgoKDg0OGxAQGywkHCQsLCssLCwsLCwsLCw3LCssLCwsLCwsLCwsLCwsLCssLCwsLCwsLCwsLC0sLCwsLCssLP/AABEIAH4AtAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQUGBwgEAwL/xABFEAACAQMBBAUIBwUGBwEAAAABAgMABBESBQYhMQdBUXGzEyIyNWFzsbIjMzRydIGRFFKhwfAVJUSDktEkQkNTYpPSw//EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACgRAAICAQMDAwUBAQAAAAAAAAABAhEDEiExBDIzQUJRExQigZGhYf/aAAwDAQACEQMRAD8AvGik1UZoAWoT0v8Aqqb70XziprmmveXYSXtu1tKWCMVJKEA+acjiQR/CnF00wZluir9g6JdnLzWV++Vh8uK7oujbZy/4cH7zOfia7fuYmehmdKDWlU3G2evK0h/Nc/GvdN0bEcrSAf5a0vul8BoMxZpa1A+7doFOLaDkf+mn+1ZjuR57j/yYDu1YrTHl1kuNHlmlBq8eiPY8E2yo3lhidjJOCzIrHhMwHEjNS191bI87WA/5a1EupUW1Q1AzDRWmH3K2eedpB/pA+FcsnR5s4/4VB90sPgaX3UfgegzjVk9BX2649x/+q1OJ+izZzconU9qyuPia7d1dxrewmeeBpCXTQQ7BhjUG4cM54DrqcnURlFpAotMldFJqozXIaC0UUUAFFFFACUUUUAQ/pM3jmsLWOaDRqaUIdYyMFWPURx4VAdjdKV9Lc28TCDTJLGjYQ5wzhTjzueDUm6dPsEPv1+R6qHdn7dZ/iIPFWuvFCLx20Zt0zUwpaSlrkNAooooArvpS3yuNny2yweTxIsjNrUnipQDHEfvGmbcTpEu7u/htpRFocSZ0oQfNQsOOe0VzdPn19l7uf5o6jfRL63tu6bwmrrWOP0tVbmdvUaGm9Fu4/Csn3P1kn32+c1rCb0W7j8Kyfc/WSffb5zS6XlhMvroX9URe8uPGevvpQ3nm2fDBJBozJIytrUsMBC3DBHZXx0L+qIveXHjPTR08/ZrX3reGazpPLT+SvaNm6PSXe3N9bW0gh0SOVbShBwEZuB1f+IqZ74dIFvYExcZp+H0SEDTniC7f8oxxxxOOqqG2FtM2txHcqAWj1lQf3ijKp/ItnHXiuzd/d+52jOwjBYkl5ZW9FSxySxwckkngMknPZw3nhjdvZEqTJHtDpavpD9GIoQeoKWP+pj/IU1N0h7SP+KYdyp/81YGyuhu3UA3E0srdYTEa+3tY/rTyOizZuMeRf/2yf/VT9TCvQdSKst+kvaKf9cP99FPwAqTbD6Y5AwW7gVkPOSIlSPaUOQR3EU97S6H7NwfIyTQt1ed5RfzD8cdxFVLvPu/LY3BglwTjUjjOHXlqGev2dVVH6WTZIW6NK7J2pHcxLPC4eNxkEfxBHUR2V3VRnQptto7x7Qn6OZSwHZInHI711D8hV5CuXJDRKi07FoooqBiUUUUAVv06fYIffr8j1UO7P26z/EQeKtW906fYIffr8j1UO7P26z/EQeKtd2HxmUuTU1LSUtcJqFFFFAFM9Pn19l7uf5o6jfRL63tu6bwmqSdPn19l7uf5o6jfRL63tu6bwmruj4P6ZPuNDTei3cfhWT7n6yT77fOa1hN6Ldx+FZPufrJPvt85rPpeWOZfXQv6oi95ceM9NHTz9mtfet4Zp36F/VEXvLjxnpo6efs1r71vDNRHzfsr2lMIpJCgZJIAHaScAVpvc3YK2VnFAvpABpG62cjLMfz5dgAFZ63QhD7QtFPIzR5/Jgf5VqAVfUvhEwFooFLXKaCEVVnTzZjyFpPjiJWjJ9jxs/xj/jVqVW/Tt6vg/Ep4M1aYe9ClwcO7AFps20eBQHuEMksuASST6Gcchw4eyp/u7fPNAHfnkjOMZx11Ru5G9s8Lw2RWOWCSWNdEik6C7hWZCDwPE8OI41ft3KIYmcLwRSdI4chy9laZlWzW5EV6nWDS1F93943mm8m6qAQSpXPDHUc1KKxlBxdMtO0JRRRUjK36dPsEPv1+R6qHdn7dZ/iIPFWre6dPsEPv1+R6qHdn7dZ/iIPFWu7B4zKXJqalpKWuE1CiiigCmenz6+y+5P8ANHUb6JfW9t3TeE1SPp7b/iLMdkcx/V0/2qOdEvre27pvBau6Pg/pm+40NN6Ldx+FZPufrJPvt85rWE3ot3H4Vk+5+sk++3zms+l5YTL66F/VEXvLjxnpo6efs1r71vDNO/Qv6oi95ceM9NHTz9mtfet4ZqI+b9le0rLcj1lZ++T41p0VmLcj1lZ++T41p0VXVdyFABS0UVzFhVb9O3q+D8SnhTVZFVx07er4PxKeFNWmLvQpcED3I3PeTyF/LKkEKyoyagSZTG4YhQOrzTxq+45FkXIIdGHeCDVW7pXMd5YWsEUkYnt0MTws2ksAeDqOsHhxFWLu/s9oIQjHLZJOOQz1Vpm33b3Ij/h62OyIoWLRpgnhnJPDsGeVeN7vBDC/k3bj14GcdmadM1Gtr7seVmMiyaQ3pDGTyx5v9dVZRpv82U9u0kqNkZHEGkr5t4giKg5KAB3AYFFQUV904xZ2fG37syE/mrD+dU1sGUJd2rnks8B/SVa0Tv8AbIN1s+4hUZfTrQdrIQyj88fxrNCnrHDl/X9eyu3p3cGjOXJrhaWo1uVvXDfW6MHXywVRNHkalbHE4/dPUeVSTNcbTXJaFr5NBaozvbvtbWUbanV5sHRCpBYnq1Y9EZ6z/Gkk3sh2VZ01Xwk2ksY5RQop+87M5/gVrg6JfXFt3TeE1RraV688slxJxeRizHqyer8hwx7KkvRL63tu6bwmr0GtOOv+MyT3NDTei3cfhWT7n6yT77fOa1hN6Ldx+FZPuvrJPvt85rHpfUcy+uhf1RF7y48Z6aOnn7Na+9bwzTv0LeqIveXHjPTR08/ZrX3reGaiPm/ZXtKy3I9ZWfvk+NadFZi3I9ZWXvk+NadFV1XchQFooormLCq36dvV8H4lPBmqyKrfp3H93wfiU8GatMXehS4Kd3ex+22mf+/Bj/2rWn9oozRSCPg5U6e/HCqs3SsIbOytbhYkknuF8qZJBq0DI0qvZjzevn+VWVsLaBnhEhGk5IOOWR2ZrXO9VNcIiPwR7dOxnS4LMrquCG1AjV2DjzPt76mgpAK+qxnPW7LiqVCUUUVAxG5VUHSL0bO0j3dkmrUS0sIxnPWyDrz1r+lXDSYqoTcHaE1ZktleJ+OuORe3UjD+Ypzh3nvFGFupx/mN/M1pXaGyYJxiaKOT76hvjTK+4Gzicm0h/IEfwBrpXUR9UTpZn653hupOD3M7A8DmRvz6+Nde7u6l1euBDE2knzpmBCKDzOo+kfYMn4jQNlulZREGO1gUjkdCk/qaeVQAAAAAcgKT6le1Bo+SiOkzYUWz7axtYzks00sjnGXcBELezGrA7BTd0SsP7XtuI5TeE/8AX51oOezjfGtEfHLUoOP1r5i2fEpDLHGrDkQig/qBULP+OloNO57Tei3cfhWTbpx5STiPTb5j/OtaGuT+yoP+zF/oX/apxZfp2OSsiXQt6oi95ceM9M/Ty3/DWueH0zeEas2GFUGlFVR2KAB+gr5uLVJMB0V8ctSg4/WpU/z1DrajM+47j+0rLiPrk6/bWnVNcqbLgBDCGIEcQQigj2jhXXTy5NbToSVC0UlLWZQVW/Tuf7vg/Ep4M39flVkV5XFskgw6q454YAjPbg1UJaZJiatFB7kb6aRDs+eNZ4mkRIm1FWj8o2OY5rk9/H9L6tbdY1CIAqjkBXkuyoAQRDECOIIReB59ldlVkmpcCSoSloorMoSiiigBaK5by/ihAaWRIwTgF2Cgnjwyevga+LPa8ExKxSxyEDJCOrEA8iQDQB21Dt7Lhl2lslQ7KryXAYAkBvocqCOR49vXUq/bE8p5LUvlNOrRkatOcZxzxnrri23sSC8QJOmoK2pCCysjDkyupBU+0GmtnuIYthXDHa+0lLMVVLbSuSQpKnOByBNN+zt8blzayvHCIZ7l7TCl9YKu6rJk8Meb6PHtzxwJVsPYMForrAhGs6nZmZ2c4ABZ3JJ4e2vA7v2kUUYK6Y7eVrlSzvhHJZ2csW5ZZuB4U7QUzlhvP74lh0kYtYX1a3wcyyDAjzpHo8wMnl1VwbO3ulkuI7MxxicXE8c4BbCQxLqWUe1gYx2ZapLDs+Ezm8UZkeNY9YYkGMEsoxnTzY8cddfMOw4FuZLxYwJ5FCO+W4gDh5ucA8BxAycCncQpkX2/vlNFcXEMEWsW4jLDycztKXXUVVkGmPgebcz7BTlvFt+aJrFLeNGe6ZkAlLLp+hZwTjsxxHYDiu7aW69tcS+WkRtZAV9MkiB1XiodUYBx354cOVdd7suJ3hldfOtyzxHJAQlGRjwOD5rHnRcQpjLvPtu5tlg0xq2sHy8oSSRYsLnPk4/PKluGequLbm3deyEuyEctJbqfJSSBcm5SM4caX4HmDjkQaedrWlpdJHPJIulSRHNHMUwXOgqJEYZyeGM8/bXq+7lsbVbMx/QKVYJqYecriQHUDknVx4niaVqgOLbe2Zkuraztlj8pMkkpaXVpVItOoAKcliWHdxPe0bobVkj2VcXEjKXjmuzmWQhRiZsAvgkKOQwOWOFSfbGwYLryZlU6oySjI7oy54MNSEHBHMV5RbsWq2r2QjxA5dmTU/Eu2pjqzkcePA8KLVBQ17qbzS3F1NbSqnmRxyq6JNHkOSMaZeJAx6XI0wbW2/c3EUM4CR25v4okCs4kwkxUlyOBDY9HhjPXUx2DsS1jY3NuS7OojaUyvLqVGOBlmI4HNeLbmWZkMvk2yZBNgSSBBKG1a1TVpDE88Djk9tVaTCmSSivnVRqrMZ9UV4z3SIAXZVBIUFiBljwUDPWeyvUUALRRRQAlFFFAHBtixjlhdZEVwAxAcAgHScHjyPHnUX6KLWNdlWsyxoJHj85goBbiTxIqbEV8xRKoCqoUDkAAAPyFO9qEVdujtq5lubaZ5FDzs63MLNDlQobSqRqvlFKEAecevtxTlvBtiQXl0kl61kkEUTwAIreVLEl3KlS0gBAGhePHtqeJaRhy4RA55sFAJ7zzomtI3Ks6IxXipZQSO7PKqc0woie9F9MZNmQxTtELl2WRkVQSvkGbgsinScjvFN9ptWc7H2o0kpkktzexpIypkiNcpqGNJIz1jvqwHhUkEqCV4qSBwPLI7K+RbJhl0rhslhgYJPPI66WpBRC9u7Uljstn6ZPIrO8Ec1wAv0SMmSw1DSuSAMkcM107N2vosb2X9ra5WAzaZvJZZQiBivABJivHivDq5g1K3t1K6CqlcY0kAjHZiiO3RV0KqheWkAAY7qLQUQDcvbUz36wNO8sb23liHeFyH1gavoRpQEH0cmp3tL6mT7j/ACmi3sY48aI0TGQNKgc+J5V0MM8DScrYFCwLJb7Nso+LW93JaTIeH0Uy3CmVefouoDAdoNWPvvtVkmt7dJpIi6yyHQ0UYIRebSyg4wSp0qCT3ZqWm1TSE0LpGCF0jAI5EDqontEfGtFbScjUoOD2jNU52xJEEi3huf7AS8D6pzhWl0g6V/afJPKVAwSqZPLHDOKd91bsGS4iW9a8VBG2WUExllOR5VFCPnnp4lc91SdIFC6Aqhf3QABx58K+be2SMaURUHPCgAfoKWpDIFZ7ZnTYDXUZzKDINQRfNX9qKM+hRg6EyeXHT1127qbSc30tstybyAQRy+VOgmORnxo1xgAhlOQOrB7RUxSBQukKoXsAGPbwr5t7VIxhEVBzIVQOPbwo1IKKyh2xd6UujdSEf2lJaeRKx6DF5Z0AOF1EjA456qdt+NsOlwYI55IikEkxCtDGvMKrl5AS2DgaFH/Nx6qm/wCypjGhcatWNI9L97v9tFxZxuQzojFeRZQSO7NPUrCivtt3z3GydlzyEM8lxs52IwMsZFOcDgONWOK8jbJpC6F0rggYGARyIHVXtUt2CCiiikMSiiigD//Z", "status"=>"activo", "register_date"=>"2015-08-18"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "products" ("product_name", "description", "picture", "status", "register_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product_name", "macb"], ["description", ""], ["picture", "data:image/jpeg;base64,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"], ["status", "activo"], ["register_date", "2015-08-18"], ["created_at", "2015-08-19 02:46:28.794813"], ["updated_at", "2015-08-19 02:46:28.794813"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.9ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:46:30 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/macb" for ::1 at 2015-08-18 20:46:35 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"macb"}
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'macb%')
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac" for ::1 at 2015-08-18 20:46:43 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac%')[0m
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20b" for ::1 at 2015-08-18 20:46:47 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac b"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'mac b%')
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/mac%20B" for ::1 at 2015-08-18 20:46:49 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"mac B"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE (product_name like 'mac B%')[0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products/search/macb" for ::1 at 2015-08-18 20:46:52 -0600
+Processing by API::V1::ProductsController#search as HTML
+  Parameters: {"name"=>"macb"}
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE (product_name like 'macb%')
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:46:55 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products"[0m
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: GET
+  Access-Control-Request-Headers: accept, x-auth-token
+Preflight Headers:
+  Content-Type: text/plain
+  Access-Control-Allow-Origin: http://localhost:9000
+  Access-Control-Allow-Methods: GET, POST, DELETE, PUT, OPTIONS, HEAD
+  Access-Control-Expose-Headers: 
+  Access-Control-Max-Age: 0
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: accept, x-auth-token
+Incoming Headers:
+  Origin: http://localhost:9000
+  Access-Control-Request-Method: 
+  Access-Control-Request-Headers: 
+
+
+Started GET "/api/v1/products" for ::1 at 2015-08-18 20:47:10 -0600
+Processing by API::V1::ProductsController#index as HTML
+  [1m[35mProduct Load (0.4ms)[0m  SELECT "products".* FROM "products"
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.4ms)
