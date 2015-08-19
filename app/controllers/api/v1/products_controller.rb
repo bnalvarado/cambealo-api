@@ -2,10 +2,16 @@ module API
   module V1
     class ProductsController < ApplicationController
       before_action :set_product, only: [:show, :update, :destroy]
-      before_action :set_user, only: [:create, :show, :update, :destroy]
+      before_action :set_user, only: [:index, :create, :show, :update, :destroy]
       # GET /products
       # GET /products.json
       def index
+        products = @user.products.all
+        exceptFields = [:register_date, :created_at, :updated_at]
+        return render json: { products: products.as_json(:except => exceptFields) }, status: 200
+      end
+
+      def all
         @products = Product.all
         exceptFields = [:register_date, :created_at, :updated_at]
         return render json: { products: @products.as_json(:except => exceptFields) }, status: 200
