@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       end
       get '/products/:name', to: 'products#search'
       get '/products', to: 'products#all'
+      resources :transactions
     end
   end
 end
